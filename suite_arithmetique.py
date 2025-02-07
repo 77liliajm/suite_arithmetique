@@ -4,7 +4,7 @@
 # auteur : Lilia
 
 # saisie des valeurs de la suite : le premier terme (u0), la raison (r) et le nombre de terme à gérer (nb)
-uo = int(input("Entrez le premier terme de la suite = "))
+"""uo = int(input("Entrez le premier terme de la suite = "))
 r = int(input("Entrez la raison de la suite = "))
 nb = int(input("Entrez le nombre de termes = "))
 
@@ -20,4 +20,18 @@ for k in range (0, nb):
 somme = 0
 for i in range (1, nb+1):
     somme = somme + i
-print("la somme des nb premiers termes de la suite est égal à " + str(somme))
+print("la somme des nb premiers termes de la suite est égal à " + str(somme))"""
+
+u0 = int(input("Entrez le premier terme de la suite = "))
+r = int(input("Entrez la raison de la suite = "))
+nb = int(input("Entrez le nombre termes de la suite = "))
+
+terme = u0
+somme = 0
+
+for k in range (0, nb):
+    print(f"u{k} = {terme}")
+    somme += terme
+    terme += r
+
+print("la somme des termes de la suite = ", somme)
